@@ -1,12 +1,18 @@
-# React + Vite
+# Git Workflow för Playlist App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Grenstruktur
+- main: Stabil och produktionsklar kod.
+- development: Aktiv utvecklingsgren.
+- features/*: Funktioner och förbättringar.
 
-Currently, two official plugins are available:
+## Konflikthantering
+Vid konflikt löses ändringar manuellt genom att:
+1. Öppna filen med konflikten.
+2. Ta bort konfliktsymbolerna (<<<<, ====, >>>>).
+3. Behålla rätt kod.
+4. Lägg till ändringarna och gör en commit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Git-kommandon som används
+- Skapa gren: git checkout -b <branch>
+- Slå ihop gren: git merge <branch>
+- Hantera konflikt: manuellt redigera filen
